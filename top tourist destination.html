@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Tourist Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #111827;
+    }
+
+    header {
+      background-color: #3b82f6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+      color: #1f2937;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Top Tourist Destinations in the World</h1>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?paris,eiffel" alt="Paris">
+      <div class="card-content">
+        <h2>Paris, France</h2>
+        <p>Known for its iconic Eiffel Tower, art, and romantic atmosphere.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?tokyo,japan" alt="Tokyo">
+      <div class="card-content">
+        <h2>Tokyo, Japan</h2>
+        <p>A blend of ultramodern and traditional, from neon-lit skyscrapers to temples.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?rome,italy" alt="Rome">
+      <div class="card-content">
+        <h2>Rome, Italy</h2>
+        <p>Home to the Colosseum, ancient history, and world-class cuisine.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?newyork,usa" alt="New York">
+      <div class="card-content">
+        <h2>New York City, USA</h2>
+        <p>The city that never sleeps, packed with iconic landmarks and culture.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?bali,indonesia" alt="Bali">
+      <div class="card-content">
+        <h2>Bali, Indonesia</h2>
+        <p>Famous for its forested volcanic mountains, beaches, and coral reefs.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?cape-town,south-africa" alt="Cape Town">
+      <div class="card-content">
+        <h2>Cape Town, South Africa</h2>
+        <p>A coastal gem with breathtaking landscapes and rich history.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
